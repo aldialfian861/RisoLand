@@ -19,14 +19,27 @@ t<!DOCTYPE html>
     <nav class="fixed w-full z-50 glass border-b border-orange-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <img src="logo risoland.png" alt="RisoLand Logo" class="w-16 h-16 rounded-full object-cover">
-                <h1 class="text-2xl font-extrabold tracking-tighter text-orange-600">Riso<span class="text-red-500">Land</span></h1>
+                <img src="logo risoland.png" alt="RisoLand Logo" class="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover">
+                <h1 class="text-xl md:text-2xl font-extrabold tracking-tighter text-orange-600">Riso<span class="text-red-500">Land</span></h1>
             </div>
             <div class="hidden md:flex space-x-8 font-semibold">
                 <a href="#home" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Beranda</a>
                 <a href="#menu" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Varian</a>
                 <a href="#about" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Tentang Kami</a>
                 <a href="#contact" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Pesan Sekarang</a>
+            </div>
+            <button class="md:hidden text-orange-600 focus:outline-none" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4 font-semibold bg-white bg-opacity-95">
+                <a href="#home" class="block bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition text-center">Beranda</a>
+                <a href="#menu" class="block bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition text-center">Varian</a>
+                <a href="#about" class="block bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition text-center">Tentang Kami</a>
+                <a href="#contact" class="block bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition text-center">Pesan Sekarang</a>
             </div>
         </div>
     </nav>
@@ -35,8 +48,8 @@ t<!DOCTYPE html>
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="container mx-auto text-center relative z-10" data-aos="fade-up">
             <span class="bg-orange-200 text-orange-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Premium Homemade Risol</span>
-            <h2 class="text-5xl md:text-7xl font-extrabold mt-6 mb-6 text-white" style="font-family: 'Oswald', sans-serif; font-weight: 900;">Nikmati Sensasi <br><span class="gradient-text">Risol Kekinian <br>6 Varian Rasa !</span></h2>
-            <p class="text-lg text-white max-w-2xl mx-auto mb-6" style="font-family: 'Oswald', sans-serif; font-weight: 700;">Camilan krispi dengan isian melimpah yang siap memanjakan lidahmu. Dari gurihnya daging hingga manisnya cokelat lumer.</p>
+            <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mt-6 mb-6 text-white" style="font-family: 'Oswald', sans-serif; font-weight: 900;">Nikmati Sensasi <br><span class="gradient-text">Risol Kekinian <br>6 Varian Rasa !</span></h2>
+            <p class="text-base sm:text-lg text-white max-w-2xl mx-auto mb-6" style="font-family: 'Oswald', sans-serif; font-weight: 700;">Camilan krispi dengan isian melimpah yang siap memanjakan lidahmu. Dari gurihnya daging hingga manisnya cokelat lumer.</p>
             <p class="text-lg text-white mb-10 flex items-center justify-center gap-2"><i class="fas fa-clock text-orange-500"></i>Jam Buka: 10.00 - 20.00</p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="#menu" class="bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-lg hover:shadow-orange-200 transition-all transform hover:-translate-y-1">Lihat Menu Utama</a>
@@ -55,7 +68,7 @@ t<!DOCTYPE html>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden relative">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden relative">
                         <img src="Risol mayo.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <span class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold shadow-sm">Best Seller</span>
                     </div>
@@ -68,7 +81,7 @@ t<!DOCTYPE html>
                 </div>
 
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden">
                         <img src="Risol Ayam Suwir.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <span class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold shadow-sm">Best Seller</span>
                     </div>
@@ -81,7 +94,7 @@ t<!DOCTYPE html>
                 </div>
 
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden">
                         <img src="Risol Jasuke.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Risol Jasuke Creamy</h4>
@@ -93,7 +106,7 @@ t<!DOCTYPE html>
                 </div>
 
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden">
                         <img src="Risol Pisang Coklat.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Risol Pisang Cokelat</h4>
@@ -105,7 +118,7 @@ t<!DOCTYPE html>
                 </div>
 
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden">
                         <img src="Risol Rogut.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Risol Rogut</h4>
@@ -117,7 +130,7 @@ t<!DOCTYPE html>
                 </div>
 
                 <div class="group bg-orange-50 p-4 rounded-[2rem] border border-transparent hover:border-orange-500 transition-all" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="bg-slate-300 h-64 rounded-[1.5rem] mb-6 overflow-hidden">
+                    <div class="bg-slate-300 h-48 sm:h-56 md:h-64 rounded-[1.5rem] mb-6 overflow-hidden">
                         <img src="Risol Sayur Pedas.jpg" alt="Risol" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Risol Sayur Pedas</h4>
